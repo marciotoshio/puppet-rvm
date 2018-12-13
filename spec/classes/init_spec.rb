@@ -47,7 +47,7 @@ describe 'rvm' do
 
   context "with no gnupg key id", :compile do
     let(:params) {{ :gnupg_key_id => false }}
-    it { should_not contain_gnupg_key('rvm_D39DC0E3') }
+    it { should_not contain_gnupg_key('rvm_D39DC0E3_7D2BAF1CF37B13E2069D6956105BD0E739499BDB') }
     it { should_not contain_gnupg_key('rvm_') }
   end
 
